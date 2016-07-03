@@ -1,0 +1,27 @@
+{
+  "name": "boiler",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ellt92/boiler.git"
+  },
+  "author": "Elliott Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ellt92/boiler/issues"
+  },
+  "homepage": "https://github.com/ellt92/boiler#readme"
+}
