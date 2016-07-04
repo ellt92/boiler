@@ -1,5 +1,5 @@
 const test = () => {
-    return 'wow';
+    return 'wowza';
 }
 
 module.exports = test();
