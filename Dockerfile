@@ -2,11 +2,14 @@ FROM debian:jessie
 MAINTAINER Elliott Thompson
 
 RUN apt-get -y update
-RUN apt-get -y install node
-RUN apt-get -y install npm
+RUN apt-get -y install curl
+RUN apt-get -y install sudo
+RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+RUN apt-get -y install nodejs
 RUN mkdir boiler
-ADD https://github.com/ellt92/boiler /boiler
-RUN cd /boiler
+ADD . boiler
+WORKDIR boiler
 RUN npm install
-RUN node node_modules/.bin/webpack
-RUN node server.js
+RUN node_modules/.bin/webpack
+EXPOSE 3000
+CMD node server.js
